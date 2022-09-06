@@ -8,7 +8,7 @@ const amountReducer = (state=initialState, action) => {
       return state + action.payload;
     case actions.WITHDRAW:
       console.log(actions.WITHDRAW);
-      return state + action.payload;
+      return state - action.payload;
     default:
       return state;
   }
